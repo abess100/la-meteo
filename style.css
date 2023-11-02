@@ -13,6 +13,7 @@ body{
     color: #fff;
     font-weight: 200;
     font-size: 18px;
+    display: flex;
 
 }
 #conteneur{
@@ -22,6 +23,10 @@ body{
 
 h1{
     text-align: center;
+}
+
+.img{
+    display: none;
 }
 
 h3{
@@ -60,10 +65,10 @@ button{
 #img{
     width: 30%;
 }
-img{
-    height: 100px;
-}
 
+img{
+    width: 500px;
+}
 
 
 #temperature,#nom,#petit,#humide{
@@ -126,9 +131,21 @@ img{
 
 
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 800px) {
     #conteneur{
         width: 60%;
         margin: 0 auto;
     }
+
+    .img{
+        display: block;
+        width: 30%;
+    }
+    .img>img {
+        width: 250px;
+        margin: 90px 25px;
+    }
+
+
+    
 }

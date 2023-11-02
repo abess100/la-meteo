@@ -26,8 +26,8 @@ function appelApi(e){
         let temperature  = document.querySelector('#temperature').innerHTML =  ` <p>Température</> <br> ${data.main.temp + '°'}`;
         let tempmax = document.querySelector('#temperature-max').innerHTML = `<p>Temp-max</p> ${data.main.temp_max + '°'}` ; 
         let humidity  = document.querySelector('#humide').innerHTML = `<p>humidité</p> ${ data.main.humidity + '%'}`;
-        let wind = document.querySelector('#solo').innerHTML = `<p>humidité</p> ${data.wind.speed + 'km/h'}`;
-        let icon = document.querySelector('.ico').innerHTML =` <p>humidité</p> ${data.weather[0].description}`;
+        let wind = document.querySelector('#solo').innerHTML = `<p>speed</p> ${data.wind.speed + 'km/h'}`;
+        let icon = document.querySelector('.ico').innerHTML =` <p>description</p> ${data.weather[0].description}`;
     })) 
     
     
